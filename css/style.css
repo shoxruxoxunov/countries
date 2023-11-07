@@ -1,0 +1,130 @@
+/* ---------------header-------------
+ */
+
+
+.header__container {
+    box-shadow: 02px 5px 7px 4px rgba(148, 143, 143, 0.75);
+    -webkit-box-shadow: -1px 5px 7px 4px rgba(234, 224, 224, 0.75);
+    -moz-box-shadow: -1px 5px 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title {
+    color: #111517;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-top: 2.3rem;
+    padding-bottom: 2.4rem;
+
+}
+
+.header__text {
+    color: #111517;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 2.3rem;
+    padding-bottom: 2.4rem;
+
+}
+
+span {
+    margin-right: 8px;
+}
+
+/*-------------------- main-------------
+ */
+
+main {
+    padding: 2.4rem;
+
+}
+
+section {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    max-width: 1279px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.country__card {
+
+    width: 25rem;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 02px 4px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 1.6rem;
+    transition: all.2s ease-in-out;
+
+
+
+}
+
+.country__card h3 {
+    margin-top: 2.4rem;
+}
+
+.country__card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.country__card img {
+    width: 100%;
+
+}
+
+.card__text {
+    padding-inline: 16px;
+}
+
+.card__text p {
+    margin-block: 8px;
+}
+
+.card__title {
+    font-size: 24px;
+    margin-block: 16px;
+}
+
+@media (max-width:768px) {
+    .conuntries-contaienr {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .header__text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .conuntries-contaienr {
+        display: flex;
+        justify-content: space-between;
+    }
+}
